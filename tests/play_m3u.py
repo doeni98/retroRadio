@@ -8,7 +8,9 @@ urls = [
         ['http://stream.srg-ssr.ch/drs3/mp3_128.m3u', "srf3"],
         ['https://energybern.ice.infomaniak.ch/energybern-high.mp3', "enery-bern" ],
         ['https://energybasel.ice.infomaniak.ch/energybasel-high.mp3', "enery-basel" ],
-        ['http://radiofribourg.ice.infomaniak.ch/radiofribourg-high.mp3', "Radio fr" ]
+        ['http://radiofribourg.ice.infomaniak.ch/radiofribourg-high.mp3', "Radio fr FR" ],
+        ['http://radiofribourg.ice.infomaniak.ch/radiofreiburg-high.mp3', "Radio fr DE" ]
+        
         
         
         ]
@@ -44,6 +46,7 @@ def next(station):
     player.set_media(Media)
     list_player.set_media_list(Media_list)
     list_player.play()
+    sleep(3)
 
 if __name__ == "__main__":
     main()
